@@ -9,7 +9,8 @@
 public class T02Ejercicio06 {
   public static void main(String[] args){
     double baseImponible = 22.75;
-
+    //podria haber creado una variable que calcule el iva doubleI mporteIVA = (baseImponible *0.21)
+    //y despues sumar en el ultimo prim baseImponible + ImporteIVA
     System.out.printf("Base imponible %8.2f\n", baseImponible);
     System.out.printf("IVA            %8.2f\n", (baseImponible * 0.21));
     System.out.printf("--------------------\n");
