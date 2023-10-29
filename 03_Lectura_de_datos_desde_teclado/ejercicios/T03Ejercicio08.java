@@ -13,7 +13,7 @@ public class T03Ejercicio08 {
     System.out.println("Introduzca la horas trabajadas por semana: ");
     int hora = sc.nextInt();
     int salarioSemanal = (int) (hora * 12);
-    System.out.println(salarioSemanal);
+    System.out.println("Su salario de 1 semana será de : " + salarioSemanal);
   }
   
 }
