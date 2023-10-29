@@ -15,5 +15,6 @@ public class T03Ejercicio02 {
 
     num1 = (int) (num1 * 166.386);
     System.out.println(num1);
+    sc.close();
   }
 }

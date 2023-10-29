@@ -24,5 +24,7 @@ public class T03Ejercicio04 {
     System.out.println("El resultado de su multiplicacion es : " + multi);
     System.out.println("El resultado de su division es : " + div);
     System.out.println("-------------------");
+    
+    sc.close();
   }
 }

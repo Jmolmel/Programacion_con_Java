@@ -15,7 +15,7 @@ public class T03Ejercicio03 {
     pesetas = (int) (pesetas / 166.386);
 
     System.out.printf("%d\n", pesetas);
-
+    sc.close();
   }
   
 }

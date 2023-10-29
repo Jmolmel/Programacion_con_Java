@@ -17,5 +17,6 @@ public class T03Ejercicio01 {
     int num2 = sc.nextInt();
 
     System.out.println("La numa de los numeros es: " + (num1+num2));
+    sc.close();
   }
 }
