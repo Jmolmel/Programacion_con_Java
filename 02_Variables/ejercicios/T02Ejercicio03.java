@@ -10,7 +10,7 @@ public class T02Ejercicio03 {
   public static void main(String[] args){
   String miNombre = "Jose Molina Melendez";
   String miDireccion = "Calle Miguel ";
-  String miTelefono = "6969696969";
+  String miTelefono = "696969696";
   System.out.println("Nombre: " + miNombre + " Dirección: " + miDireccion + " Telefono: " + miTelefono);
 
   }
