@@ -9,16 +9,14 @@ import java.util.Scanner;
 public class T03Ejercicio12 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    System.out.print("Introduzca la nota del primer examen(Este contará un 40%): ");
+    System.out.print("Introduzca la nota del primer examen: ");
     double nota40 = sc.nextDouble();
+    System.out.println("¿Qué nota quieres sacar en el trimestre?: ");
+    double notaDeseada = sc.nextDouble();
 
-    System.out.print("Introduzca la nota del segundo examen(Este contará un 60%): ");
-    double nota60 = sc.nextDouble();
+    double notaFinal = (notaDeseada - (nota40*0.40)/0.6);
 
-    double notaFinal = (nota40*40/100)+(nota60*60/100);
-
-    System.out.println(notaFinal);
+    System.out.printf("Para tener un %.1f en el trimestre necesitas sacar un %.1f en el segundo examen.", nota40, notaFinal);
     sc.close();
-  }
-  
+  } 
 }
