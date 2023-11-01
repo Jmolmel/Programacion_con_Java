@@ -18,5 +18,6 @@ public class Ejemplos02 {
     } else {
       System.out.println("El numero no es correcto");
     }
+    sc.close();
   }
 }

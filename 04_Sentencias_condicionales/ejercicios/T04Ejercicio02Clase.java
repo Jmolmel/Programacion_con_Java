@@ -57,5 +57,6 @@ public class T04Ejercicio02Clase {
       System.out.println("ERROR");
         break;
     }
+    sc.close();
   }
 }

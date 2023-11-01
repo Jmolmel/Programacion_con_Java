@@ -43,6 +43,7 @@ public class T04Ejercicio01 {
         break;
       }
     }
+    sc.close();
   }
   }
   

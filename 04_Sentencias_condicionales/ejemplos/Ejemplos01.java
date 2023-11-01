@@ -18,5 +18,6 @@ public class Ejemplos01 {
     } else {
       System.out.println("Has suspendido");
     }
+    sc.close();
   }
 }

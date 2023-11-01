@@ -49,7 +49,8 @@ public class T04Ejercicioc03Clase {
       default:
       System.out.println("El número introducido no es valido.");
         break;
-    };
+    }
+    sc.close();
   }
   
 }

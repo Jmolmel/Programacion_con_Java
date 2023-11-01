@@ -33,5 +33,6 @@ public class Ejemplos03bisbis {
       System.out.println("**  Error: no se corresponde con ningun dia de la semana");
       break;
     }
+    sc.close();
   }
 }

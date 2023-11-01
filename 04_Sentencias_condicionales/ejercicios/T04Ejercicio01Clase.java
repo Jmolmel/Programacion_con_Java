@@ -38,5 +38,6 @@ public class T04Ejercicio01Clase {
     } else {
       System.out.println("ERROR");
     }
+    sc.close();
   }
 }
