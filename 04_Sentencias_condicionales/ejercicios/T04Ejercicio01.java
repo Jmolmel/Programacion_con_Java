@@ -1,42 +1,48 @@
 import java.util.Scanner;
 
 /**
- * Escribe un programa que solicite por teclado la edad del usuario y muestre por pantalla si es menor,mayor de edad o si está jubilado.
+ * Escribe un programa que pida por teclado un día de la semana y que diga qué
+ * asignatura toca a primera hora ese día.
  * 
  * @author Jose Molina Melendez
  */
 public class T04Ejercicio01 {
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = new Scanner (System.in);
+    int dia;
 
-    int edad;        //definimos variable int
-    System.out.println("Introduzca la edad para ver si es mayor de edad , menor o jubilado: ");
-    edad = sc.nextInt();  //leemos con scaner la variable edad con nextInt
+    System.out.println("Introduzca numericamente el día de la semana para saber que asignatura le toca: ");
+    dia = sc.nextInt();
 
-    // if (edad > 18) {                                        //2 maneras de hacerlo
-    //   if (edad < 65) {
-    //     System.out.println("Eres mayor de edad");
-    //   }
-    //   if (edad > 65) {
-    //     System.out.println("Eres jubilado");
-    //   }
-    // }else{
-    //   System.out.println("Eres menor de edad");
-    // }
-
-
-    if (edad >= 0) {                            //Este if es para que no coja numeros negativos.
-      if (edad < 18) {                                        // menor de 18
-        System.out.println("Eres menor de edad");
+    if ((dia >= 1) || (dia <= 7)) {
+      switch (dia) {
+      case 1:
+        System.out.println("El LUNES a primer hora tienes FOL");
+        break;
+      case 2:
+        System.out.println("El MARTES a primer hora tienes PROGRAMACION");
+        break;
+      case 3:
+        System.out.println("El MIERCOLES a primer hora tienes ENTORNOS DE DESARROLLO");
+        break;
+      case 4:
+        System.out.println("El JUEVES a primer hora tienes BASE DE DATOS");
+        break;
+      case 5:
+        System.out.println("El VIERNES a primer hora tienes PROGRAMACION");
+        break;
+      case 6:
+        System.out.println("ES SABADO!!!! NO TIENES CLASE");
+        break;
+      case 7:
+      System.out.println("ES DOMINGO!!!! NO TIENES CLASE");
+        break;
+    
+      default:
+      System.out.println("Introduzca un número válido.");
+        break;
       }
-      if ((edad >= 18) && (edad <65)) {                       //de 18 a 65
-        System.out.println("Eres mayor de edad");
-      }
-      if (edad >=65){                                         //65 o mas
-      System.out.println("Eres un jubilado");
-      }      
-    } else {
-      System.out.println("ERROR");
     }
   }
-}
+  }
+  
