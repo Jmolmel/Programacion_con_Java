@@ -26,6 +26,6 @@ public class T04Ejercicio04 {
       total16 = (hora*16);
       System.out.printf("Su hora se paga a 16 euros, el total es: " + total16);
     }
+    sc.close();
   }
-  
 }

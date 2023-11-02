@@ -23,5 +23,6 @@ public class T04Ejercicio05 {
     } else{
       System.out.printf("Esta ecuación no tiene solución.");
     }
+    sc.close();
   }
 }
