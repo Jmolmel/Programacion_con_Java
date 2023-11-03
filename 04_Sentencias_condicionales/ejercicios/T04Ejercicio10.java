@@ -5,7 +5,7 @@ import java.util.Scanner;
  * 
  * @author Jose Molina Melendez
  */
-public class T04Ejercicio09 {
+public class T04Ejercicio10 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 

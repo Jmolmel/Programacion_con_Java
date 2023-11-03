@@ -15,7 +15,7 @@ public class T04Ejercicio08 {
     Double nota3;
     Double media;
 
-    System.out.println("Introduzca 3 notas para calcular su media.");   //duda como introducir un 
+    System.out.println("Introduzca 3 notas para calcular su media.");    
     System.out.print("Introduzca la primera nota: ");
     nota1 = sc.nextDouble();
     System.out.print("Introduzca la segunda nota: ");
