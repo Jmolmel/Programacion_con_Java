@@ -15,7 +15,7 @@ public class T03Ejercicio07 {
     double ivaBaseImponible = (double) (baseImponible * 0.21);
     double precioTotalConIva = (double) (baseImponible * 1.21);
 
-    System.out.println("-------FACTURA-------");
+    System.out.println("    -------FACTURA-------");
     System.out.printf("Base Imponible:      %8.2f\n", baseImponible);
     System.out.printf("IVA 21%%             %8.2f\n", ivaBaseImponible);
     System.out.printf("TOTAL:               %8.2f\n", precioTotalConIva);
