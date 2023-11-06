@@ -16,6 +16,6 @@ public class SalidaFormateada02 {
     System.out.printf("%-10s    %8.2f       %6d\n", "manzanas", 4.5, 10);
     System.out.printf("%-10s    %8.2f       %6d\n", "peras", 2.75, 120);
     System.out.printf("%-10s    %8.2f       %6d\n", "aguacates", 10.0, 6);
-    System.out.println("               Precio Total:");
+    System.out.println("         Precio Total:");
   } 
 }
