@@ -13,7 +13,7 @@ public class T03Ejercicio09 {
     double radio = sc.nextDouble();
     double altura = sc.nextDouble();
 
-    Double volumen = (double) ((1.0/3.0)*Math.PI*radio*radio*altura);  // para elevar al cuadrado puedo poner Math.pow(r, 2)
+    Double volumen = (double) ((1.0/3.0)*Math.PI*Math.pow(radio, 2)*altura);  // para elevar al cuadrado puedo poner Math.pow(r, 2)
     System.out.printf("El volumen de su cono es: %.2f", volumen);
   }
 }

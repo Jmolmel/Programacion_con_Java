@@ -11,7 +11,7 @@ public class T03Ejercicio11 {
     System.out.print("Introduzca sus Kb para convertirlos en Mb: ");
     int kiloByte = sc.nextInt();
 
-    int conversion = (int) (kiloByte / 1000 );
+    int conversion =  (kiloByte / 1000 );
 
     System.out.println("El resultado es: " + conversion + " Megabyte");
     sc.close();
