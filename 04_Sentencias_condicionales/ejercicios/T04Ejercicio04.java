@@ -14,6 +14,7 @@ public class T04Ejercicio04 {
     int hora;
     int total12;
     int total16;
+    int total;
 
     System.out.println("Introduzca el numero semanal de horas trabajadas: ");
     hora = sc.nextInt();

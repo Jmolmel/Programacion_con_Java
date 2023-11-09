@@ -11,6 +11,7 @@ public class T04Ejercicio10 {
 
     int dia;
     int mes;
+    //String horoscopo = "";       // se puede declarar para al final del programa volver a reclamarla, en cada mes ponemos horoscopo = "Escorpio"
 
     System.out.println("HOROSCOPO");
     System.out.println("Introduzca su dia de nacimiento: ");
@@ -111,7 +112,7 @@ public class T04Ejercicio10 {
         }
       }
       
-
+      //System.out.print("Su horóscopo es " + horoscopo);
 
   }
   
