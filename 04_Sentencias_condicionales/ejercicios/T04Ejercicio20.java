@@ -9,6 +9,10 @@ public class T04Ejercicio20 {
     int n;
     boolean capicua = false;
 
+    // 1 cifra : (n/1000)
+    // 2 cifras: (n / 100) % 10
+    // 3 cifras: (n / 10) % 10
+    // 4 cifras: (n / 1) % 10 <---> (n % 10)
     System.out.print("Introduce un número de 5 cifras como máximo para comprobar si es capicúo: ");
     n = Integer.parseInt(System.console().readLine());
 
