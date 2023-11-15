@@ -11,5 +11,4 @@ public class T05Ejercicio05 {
       i -= 20;
     }
   }
-  
 }

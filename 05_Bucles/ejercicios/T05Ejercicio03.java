@@ -6,12 +6,9 @@
 public class T05Ejercicio03 {
     public static void main(String[] args) {
         int i = 0;
-        int multiplos = 0;
         do {
-            multiplos = i % 5;
-            if(multiplos == 0)
             System.out.println(i);
-            i++;
+            i+= 5;
         } while (i <= 100);
     }
 }
