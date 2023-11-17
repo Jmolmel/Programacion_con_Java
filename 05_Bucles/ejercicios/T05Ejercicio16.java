@@ -24,5 +24,4 @@ public class T05Ejercicio16 {
             }
         } while (!salida);
     }
-
 }

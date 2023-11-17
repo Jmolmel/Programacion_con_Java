@@ -11,14 +11,13 @@ public class T05Ejercicio17 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int numero;
-        int suma;
-        int total;
+        int total = 0;
 
         System.out.print("Introduzca un numero para sumar los 100 siguientes: ");
         numero = sc.nextInt();
-        if (numero >= 0) {
-            for (int i = 0; i < 100; i++) {
-                total = numero + i + 1;
+        if (numero > 0) {
+            for (int i = numero; i <= numero + 100; i++) {
+                total += i;
                 System.out.println(total);
             }
         } else {
