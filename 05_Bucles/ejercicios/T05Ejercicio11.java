@@ -20,6 +20,7 @@ public class T05Ejercicio11 {
 
         for (int i = numeroIntroducido; i < numeroIntroducido + 5; i++) {
             System.out.printf("%5d  |%8d   |%9d   \n", i, i * i, i * i * i);
+
         }
     }
 }

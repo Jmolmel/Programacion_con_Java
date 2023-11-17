@@ -18,7 +18,7 @@ public class T05Ejercicio14 {
         exponente = sc.nextInt();
 
         for (int i = 0; i <= exponente; i++) {
-            int resultado = i * base;
+            int resultado = i *= base;
             System.out.println(resultado);
         }
     }
