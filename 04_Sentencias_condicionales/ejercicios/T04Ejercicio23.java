@@ -53,11 +53,12 @@ public class T04Ejercicio23 {
                 break;
         }
         Double total = precioConIva - descuento;
-        System.out.println(baseImponible);
-        System.out.println(porcentajeIva);
-        System.out.println(precioConIva);
-        System.out.println(descuento);
-        System.out.println(total);
+        System.out.printf("%-20s  %8.2f \n", "Base imponible", baseImponible);
+        System.out.printf("IVA (%-2.2f %%)  %16.2f \n", iva, porcentajeIva);
+        System.out.printf("%-20s  %8.2f \n", "Precio con IVA", precioConIva);
+        System.out.printf("%-20s  %8.2f \n", "Cod promo.", descuento);
+        System.out.printf("%-20s  %8.2f \n", "Total", total);
+        sc.close();
     }
 
 }
