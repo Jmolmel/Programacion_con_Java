@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "T04Ejercicio28",
+      "request": "launch",
+      "mainClass": "T04Ejercicio28",
+      "projectName": "04_Sentencias_condicionales_837f6de"
+    },
+    {
+      "type": "java",
+      "name": "T04Ejercicio27",
+      "request": "launch",
+      "mainClass": "T04Ejercicio27",
+      "projectName": "04_Sentencias_condicionales_837f6de"
+    },
+    {
+      "type": "java",
+      "name": "T04Ejercicio26",
+      "request": "launch",
+      "mainClass": "T04Ejercicio26",
+      "projectName": "04_Sentencias_condicionales_837f6de"
+    },
+    {
+      "type": "java",
       "name": "Current File",
       "request": "launch",
       "mainClass": "${file}"
