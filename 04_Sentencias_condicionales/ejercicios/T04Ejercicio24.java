@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 /**
- * Escribe un programa que genere la nómina (bien desglosada) de un empleado según las siguientes condiciones
+ * Escribe un programa que genere la nómina (bien desglosada) de un empleado
+ * según las siguientes condiciones
  * 
  * @author José Molina Meléndez
  */
@@ -34,23 +35,23 @@ public class T04Ejercicio24 {
         sueldo = 1200.00;
         break;
       case 3:
-          sueldo = 1600.00;
+        sueldo = 1600.00;
         break;
 
       default:
-      System.out.println("ERROR.Introduzca un puesto correcto.");
+        System.out.println("ERROR.Introduzca un puesto correcto.");
         break;
     }
     switch (estadoCivil) {
       case 1:
-        irpf = (25);
+        irpf = 25;
         break;
       case 2:
-        irpf = (20);
+        irpf = 20;
         break;
-    
+
       default:
-      System.out.println("Introduzca un estado civil válido.");
+        System.out.println("Introduzca un estado civil válido.");
         break;
     }
     dineroDietas = (precioDia * dietas);
@@ -60,15 +61,15 @@ public class T04Ejercicio24 {
 
     System.out.println("|--------------------------------------|");
     System.out.printf("|%-20s         %9.2f| \n", "Sueldo base", sueldo);
-    System.out.printf("|%-20s         %9.2f|\n","Dietas (5 viajes)", dineroDietas );
+    System.out.printf("|%-20s         %9.2f|\n", "Dietas (5 viajes)", dineroDietas);
     System.out.println("|--------------------------------------|");
     System.out.printf("|%-20s          %8.2f| \n", "Sueldo bruto", sueldoBruto);
-    System.out.printf("|%-20s(%1d %%) %11.2f| \n","Retencion IRPF", irpf, retencionIrpf);
+    System.out.printf("|%-20s(%1d %%) %11.2f| \n", "Retencion IRPF", irpf, retencionIrpf);
     System.out.println("|--------------------------------------|");
-    System.out.printf("|%-20s         %9.2f| \n","Sueldo neto", sueldoNeto );
+    System.out.printf("|%-20s         %9.2f| \n", "Sueldo neto", sueldoNeto);
     System.out.println("|--------------------------------------|");
-    
+
     sc.close();
   }
-  
+
 }

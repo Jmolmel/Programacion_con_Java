@@ -22,7 +22,7 @@ public class T04Ejercicio26 { // HAY FALLOS, HACER DE MANERA MAS SIMPLIFICADA.
         int precioBase = 0;
         double descuento = 0.00;
 
-        System.out.print("Número de entradas que desea comprar: ");
+        System.out.print("Número de personas que quieren entrada: ");
         entradas = sc.nextInt();
         System.out.print("Día de la semana: ");
         dia = sc.next();

@@ -33,8 +33,6 @@ public class T04Ejercicio28 {
             } else {
                 System.out.println("Jugador 2 gana.");
             }
-
         }
-
     }
 }
