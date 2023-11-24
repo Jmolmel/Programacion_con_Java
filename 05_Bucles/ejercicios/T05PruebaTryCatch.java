@@ -21,7 +21,5 @@ public class T05PruebaTryCatch {
     } finally {
       System.out.println("Gracias por usar este programa .");
     }
-
-
   }
 }

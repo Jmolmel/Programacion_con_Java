@@ -20,9 +20,9 @@ public class T05Ejercicio23 {
 
         do {
             numeroIntroducido = sc.nextInt();
-            contadorSuma += numeroIntroducido;
             contadorNumeros++;
-        } while (contadorSuma <= 10000)
+            contadorSuma += numeroIntroducido;
+        } while (contadorSuma <= 10000);
         sc.close();
         
         System.out.println("Ha introducido usted un total de: " + contadorNumeros + " numeros.");
