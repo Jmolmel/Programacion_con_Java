@@ -11,12 +11,15 @@ public class T05PruebaTryCatch {
       numero1 = sc.nextInt();
       System.out.println("Introduzca el primer número: ");
       numero2 = sc.nextInt();
-      System.out.println("La media es " + (numero1 + numero2) / 2);
+      sc.close();
+      System.out.println("La media es = " + (numero1 + numero2) / 2);
+    } catch (NumberFormatException nfe) {                        // saldria fallo si no introduces un número
+      System.out.println("No se puede introducir caracteres.");
     } catch (Exception e) {
-      System.out.println("No se puede calcular la media.");
-      System.out.println("Los datos introducidos no son correcto.");
+      System.out.println("Eror de mensaje." + e.getMessage());
+      System.out.println("Clase de excepción." + e.getClass());
     } finally {
-      System.out.println("Gracias por usar este programa.");
+      System.out.println("Gracias por usar este programa .");
     }
 
 
