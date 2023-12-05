@@ -11,8 +11,8 @@ public class T05EjercicioEXTRA {
         int numeroIntroducido;
         int numeroCompleto = 0;
         int maximo = 0;
-
-        do {
+        try {
+            do {
             System.out
                     .println("Introduzca un número entre el 0 y el 9. Para finalizar, introduzca un número negativo:");
             numeroIntroducido = sc.nextInt();
@@ -24,7 +24,7 @@ public class T05EjercicioEXTRA {
                     maximo = numeroIntroducido;
                 }
             } else {
-                System.err.println("Introduzca un número dentro del rango permitido.");
+                System.out.println("Introduzca un número dentro del rango permitido.");
             }
         } while (numeroIntroducido >= 0);
 
@@ -37,7 +37,7 @@ public class T05EjercicioEXTRA {
             numeroCompleto /= 10;
         }
 
-        System.out.println("--------------------------------------");
+        System.out.println("______________________");
         while (numeroVolteado > 0) {
             int digito = numeroVolteado % 10;
             System.out.printf("  %-4d|", digito);
@@ -55,7 +55,13 @@ public class T05EjercicioEXTRA {
             System.out.println();
             numeroVolteado /= 10;
         }
+        System.out.println("______________________");
 
-        System.out.println("--------------------------------------");
+        } catch (NumberFormatException nfe) {                        
+            System.out.println("No se puede introducir caracteres.");
+        } catch (Exception e) {                        
+            System.out.println("Eror de mensaje." + e.getMessage());
+            System.out.println("Clase de excepción." + e.getClass());
+        }
     }
 }

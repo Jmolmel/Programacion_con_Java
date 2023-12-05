@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  * Realiza una programa que calcule las horas transcurridas entre dos horas de
  * dos días de la semana. No se tendrán en cuenta los minutos ni los segundos.
