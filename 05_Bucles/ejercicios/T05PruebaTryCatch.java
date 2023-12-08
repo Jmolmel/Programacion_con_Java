@@ -13,8 +13,9 @@ public class T05PruebaTryCatch {
       numero2 = sc.nextInt();
       sc.close();
       System.out.println("La media es = " + (numero1 + numero2) / 2);
-    } catch (NumberFormatException nfe) {                        // saldria fallo si no introduces un número
+    } catch (NumberFormatException nfe) { // saldria fallo si no introduces un número
       System.out.println("No se puede introducir caracteres.");
+
     } catch (Exception e) {
       System.out.println("Eror de mensaje." + e.getMessage());
       System.out.println("Clase de excepción." + e.getClass());

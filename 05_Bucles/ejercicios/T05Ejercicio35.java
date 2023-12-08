@@ -10,11 +10,12 @@ import java.util.Scanner;
 public class T05Ejercicio35 { // SIN TERMINAR
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Introduzca la altura de su X: ");
+        System.out.print("Introduzca la altura de su X: ");
         int alturaIntroducida = sc.nextInt();
         int altura = 1;
-        int espaciosInternos = alturaIntroducida - 1;
-        int espaciosPorDelante = 0;
+        int espaciosPorDentro = alturaIntroducida - 2;
+        int espaciosPorFuera = 0;
+        int asteriscoFuera = 1;
 
         if ((alturaIntroducida % 2 == 0) || (alturaIntroducida < 3)) {
             System.out.println("Introduzca altura impar mayor o igual a 3.");
@@ -22,12 +23,24 @@ public class T05Ejercicio35 { // SIN TERMINAR
         } else {
             while (altura < alturaIntroducida / 2 + 1) {
 
-                for (int i = 0; i < espaciosPorDelante; i++) {
-                    System.out.println(" ");
+                for (int i = 1; i <= espaciosPorFuera; i++) {
+                    System.out.print(" ");
                 }
-                for (int i = 1; i < espaciosInternos; i++) {
-                    System.out.println(" ");
+                for (int i = 1; i <= altura; i++) {
+                    System.out.print("*");
+
+                    for (int j = 1; j <= espaciosPorDentro; j++) {
+                        System.out.print(" ");
+                    }
                 }
+                for (int i = 1; i < asteriscoFuera; i++) {
+                    System.out.print("*");
+                }
+                System.out.println();
+                asteriscoFuera--;
+                espaciosPorDentro--;
+                espaciosPorFuera++;
+                altura++;
 
             }
         }
