@@ -22,13 +22,11 @@ public class T05Ejercicio40 {
 
         if (alturaIntroducida % 2 != 0 && alturaIntroducida >= 3) {
 
-            // parte superior
             while (altura <= alturaIntroducida / 2 + 1) {
 
                 for (int i = 1; i <= espaciosPorDelante; i++) {
                     System.out.print(" ");
                 }
-
                 System.out.print("*");
 
                 for (int i = 1; i < espaciosPorDentro; i++) {
@@ -38,38 +36,34 @@ public class T05Ejercicio40 {
                     System.out.print("*");
                 }
                 System.out.println();
-
                 altura++;
-                espaciosPorDelante--;
                 espaciosPorDentro += 2;
+                espaciosPorDelante--;
             }
 
-            espaciosPorDentro = alturaIntroducida - 3;
+            int nivel = 0;
             espaciosPorDelante = 1;
-            altura = 0;
-
-            while (altura < alturaIntroducida / 2) {
+            espaciosPorDentro = alturaIntroducida - 3;
+            while (nivel < alturaIntroducida / 2) {
 
                 for (int i = 1; i <= espaciosPorDelante; i++) {
                     System.out.print(" ");
                 }
                 System.out.print("*");
-
                 for (int i = 1; i < espaciosPorDentro; i++) {
                     System.out.print(" ");
                 }
-
-                if (altura < alturaIntroducida / 2 - 1) {
+                if (nivel < alturaIntroducida / 2 - 1) {
                     System.out.print("*");
                 }
-
                 System.out.println();
-                altura++;
                 espaciosPorDelante++;
                 espaciosPorDentro -= 2;
+                nivel++;
             }
         } else {
-            System.out.println("Error");
+            System.out.println("ERROR");
         }
+
     }
 }
