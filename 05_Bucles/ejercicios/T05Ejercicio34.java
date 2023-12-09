@@ -17,53 +17,53 @@ import java.util.Scanner;
 public class T05Ejercicio34 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        long numero1;
-        long numero2;
-        long numeroVolteado1 = 0;
-        long numeroVolteado2 = 0;
-        int longitud = 0;
+        long numeroPrimeroVolteado = 0;
+        long numeroSegundoVolteado = 0;
+        int numeroDeDigitos = 0;
 
-        System.out.print("Introduzca un número: ");
-        numero1 = sc.nextLong();
-        System.out.print("Introduzca el segundo número: ");
-        numero2 = sc.nextLong();
+        System.out.println("Introduzca el primer número: ");
+        long primerNumero = sc.nextLong();
+        System.out.println("Introduzca el segundo número: ");
+        long segundoNumero = sc.nextLong();
 
-        while (numero1 > 0) {
-            numeroVolteado1 = ((numeroVolteado1 * 10) + (numero1 % 10));
-            numero1 /= 10;
-            longitud++;
+        while (primerNumero > 0) {
+            numeroPrimeroVolteado = (numeroPrimeroVolteado * 10) + (primerNumero % 10);
+            primerNumero /= 10;
+            numeroDeDigitos++;
         }
-
-        while (numero2 > 0) {
-            numeroVolteado2 = ((numeroVolteado2 * 10) + (numero2 % 10));
-            numero2 /= 10;
+        while (segundoNumero > 0) {
+            numeroSegundoVolteado = (numeroSegundoVolteado * 10) + (segundoNumero % 10);
+            segundoNumero /= 10;
         }
+        System.out.println();
 
-        long resultadosPares = 0;
-        long resultadosImpares = 0;
+        long resultadoPares = 0;
+        long resultadoImpares = 0;
         int digito;
 
-        for (int i = 0; i < longitud; i++) {
+        for (int i = 0; i < numeroDeDigitos; i++) {
 
-            digito = (int) (numeroVolteado1 % 10);
+            digito = (int) (numeroPrimeroVolteado % 10);
 
-            if ((digito % 2) == 0) {
-                resultadosPares = resultadosPares * 10 + digito;
+            if (digito % 2 == 0) {
+                resultadoPares = resultadoPares * 10 + digito;
+
             } else {
-                resultadosImpares = resultadosImpares * 10 + digito;
+                resultadoImpares = resultadoImpares * 10 + digito;
             }
 
-            digito = (int) (numeroVolteado2 % 10);
+            digito = (int) (numeroSegundoVolteado % 10);
 
-            if ((digito % 2) == 0) {
-                resultadosPares = resultadosPares * 10 + digito;
+            if (digito % 2 == 0) {
+                resultadoPares = resultadoPares * 10 + digito;
             } else {
-                resultadosImpares = resultadosImpares * 10 + digito;
+                resultadoImpares = resultadoImpares * 10 + digito;
             }
-            numeroVolteado1 /= 10;
-            numeroVolteado2 /= 10;
+
+            numeroPrimeroVolteado /= 10;
+            numeroSegundoVolteado /= 10;
         }
-        System.out.println("El numero formado por los pares es : " + resultadosPares);
-        System.out.println("El numero formado por los impares es : " + resultadosImpares);
+        System.out.println("El número formado por los dígitos pares son : " + resultadoPares);
+        System.out.println("El número formado por los dígitos impares son : " + resultadoImpares);
     }
 }

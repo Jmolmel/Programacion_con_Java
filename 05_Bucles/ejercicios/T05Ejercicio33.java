@@ -20,13 +20,16 @@ public class T05Ejercicio33 {
 
         for (int i = 1; i < altura; i++) {
             System.out.print("*");
+
             for (int j = 1; j <= altura - 2; j++) {
                 System.out.print(" ");
             }
             System.out.println("*");
         }
+
         System.out.print(" ");
-        for (int i = 1; i <= altura - 2; i++) {
+
+        for (int j = 1; j <= altura - 2; j++) {
             System.out.print("*");
         }
     }
