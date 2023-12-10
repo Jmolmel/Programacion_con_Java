@@ -10,36 +10,35 @@ import java.util.Scanner;
 public class T05Ejercicio41 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int digitosPares = 0;
-        int digitosImpares = 0;
+        long numeroVolteado = 0;
+        int digitoPar = 0;
+        int digitoImpar = 0;
+        int contador = 0;
         int digito;
 
-        try {
-            System.out.print("Introduzca un número entero positivo: ");
-            long numeroIntroducido = sc.nextLong();
+        System.out.print("Introduzca un número entero positivo : ");
+        long numeroIntroducido = sc.nextLong();
 
-            long copiaNumero = numeroIntroducido; // copiamos el número introducido para trabajar con el.
+        long copiaNumero = numeroIntroducido;
 
-            while (copiaNumero > 0) {
-                digito = (int) (copiaNumero % 10); // El resto de dividir por 10.
-                if (digito != 0) {
-                    if (digito % 2 == 0) {
-                        digitosPares++;
-                    } else {
-                        digitosImpares++;
-                    }
-                }
-                copiaNumero /= 10;
-            }
-            System.out.println("El número " + numeroIntroducido + " contiene " + digitosPares + " dígitos pares y "
-                    + digitosImpares + " impares.");
-
-        } catch (Exception nfe) {
-            System.out.println("ERROR!!! No puede introducir carácteres.");
-
-        } finally {
-            System.out.println("Gracias por usar nuestro programa.");
+        while (copiaNumero > 0) {
+            numeroVolteado = (numeroVolteado * 10) + (copiaNumero % 10);
+            copiaNumero /= 10;
+            contador++;
         }
 
+        for (int i = 1; i <= contador; i++) {
+            digito = (int) numeroVolteado % 10;
+            if (digito % 2 == 0) {
+                digitoPar++;
+            }
+            if (digito % 2 != 0) {
+                digitoImpar++;
+            }
+            numeroVolteado /= 10;
+        }
+
+        System.out.println("El número " + numeroIntroducido + " tiene " + digitoPar + " números pares y " + digitoImpar
+                + " números impares.");
     }
 }

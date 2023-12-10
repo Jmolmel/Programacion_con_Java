@@ -10,18 +10,17 @@ import java.util.Scanner;
 public class T05Ejercicio39 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int calculoFactorial = 1;
-
-        System.out.print("Introduzca un número: ");
+        System.out.print("Introduzca un número entero positivo: ");
         int numero = sc.nextInt();
+        int factorial = 1;
 
         if (numero > 0) {
+
             for (int i = 1; i <= numero; i++) {
-                calculoFactorial *= i;
-                System.out.println(i + "!" + " = " + calculoFactorial);
+                factorial *= i;
+                System.out.print(i + "!" + " =" + factorial);
+                System.out.println();
             }
-        } else {
-            System.out.println("Introduzca un número entero positivo.");
         }
     }
 }

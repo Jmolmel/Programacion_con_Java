@@ -14,9 +14,9 @@ public class T05Ejercicio42 {
     boolean esPrimo;
 
     System.out.print("Introduzca un número entero positivo: ");
-    int numero = sc.nextInt();
+    int numeroIntroducido = sc.nextInt();
 
-    for (int i = numero; i < numero + 5; i++) {
+    for (int i = numeroIntroducido; i < numeroIntroducido + 5; i++) {
       esPrimo = true;
 
       for (int j = 2; j < i; j++) {
@@ -24,12 +24,13 @@ public class T05Ejercicio42 {
           esPrimo = false;
         }
       }
-
       if (esPrimo) {
-        System.out.println(i + " es primo.");
-      } else{
-        System.out.println(i + " no es primo.");
+        System.out.println(i + " es primo");
+      } else {
+        System.out.println(i + " no es primo");
       }
+
     }
   }
+
 }
