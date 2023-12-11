@@ -5,7 +5,7 @@ import java.util.Scanner;
  * 
  * @author José Molina Meléndez
  */
-public class T05EjercicioEXTRA {
+public class T05Historigramav2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int numeroIntroducido;
