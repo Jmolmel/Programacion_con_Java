@@ -13,23 +13,24 @@ public class T05Ejercicio54 {
 
         System.out.print("Introduzca la altura de la figura: ");
         int altura = sc.nextInt();
-        int espaciosEnBlanco = altura - 3;
 
         for (int i = 1; i <= altura; i++) {
             System.out.print("*");
         }
         System.out.println();
 
+        int espaciosDentro = altura - 3;
+
         for (int i = 1; i <= altura - 2; i++) {
             System.out.print("*");
-
-            for (int j = 1; j <= espaciosEnBlanco; j++) {
+            for (int j = 1; j <= espaciosDentro; j++) {
                 System.out.print(" ");
             }
             System.out.println("*");
-            espaciosEnBlanco--;
+            espaciosDentro--;
             nivel++;
         }
         System.out.println("*");
+
     }
 }
