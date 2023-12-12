@@ -44,7 +44,7 @@ public class T05Historigramav2 {
             System.out.printf("| %-1d |", digito);
             if (digito > 0) {
                 for (int i = 0; i < digito; i++) {
-                    System.out.print(" *| ");
+                    System.out.print(" * |");
                 }
                 for (int j = digito; j < maximo; j++) {
                     System.out.print(" |");
