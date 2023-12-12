@@ -14,37 +14,40 @@ import java.util.Scanner;
 public class T05Historigrama {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int numero;
-        int numeroCompleto = 0;
         String caracter = "";
-        System.out.print("Introduzca un carácter : ");
-        caracter = sc.nextLine();
-        do {
+        int numero;
 
-            System.out.println("Introduzca números para mostrar en el historigrama: ");
+        int numeroCompleto = 0;
+
+        System.out.print("Introduzca un caracter: ");
+        caracter = sc.nextLine();
+
+        do {
+            System.out.print("Introduzca números: ");
             numero = sc.nextInt();
+
             if (numero >= 0) {
                 numeroCompleto = numeroCompleto * 10 + numero;
             }
 
         } while (numero >= 0);
 
-        int volteado = 0;
+        int numeroVolteado = 0;
 
         while (numeroCompleto > 0) {
-            volteado = volteado * 10 + numeroCompleto % 10;
+            numeroVolteado = numeroVolteado * 10 + numeroCompleto % 10;
             numeroCompleto /= 10;
         }
 
-        while (volteado > 0) {
-            int digito = volteado % 10;
+        while (numeroVolteado > 0) {
+            int digito = numeroVolteado % 10;
+            System.out.print(digito + "| ");
 
-            System.out.print(digito + " |");
             for (int i = 1; i <= digito; i++) {
                 System.out.print(caracter);
             }
             System.out.println();
-            volteado /= 10;
+            numeroVolteado /= 10;
         }
     }
 }
