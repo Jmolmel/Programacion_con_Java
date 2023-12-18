@@ -3,7 +3,7 @@ package matematicas;
 /**
  * Funciones matemáticas de propósito general
  * 
- * @author Sergio Sánchez
+ * @author José Molina Meléndez
  */
 public class Varias {
 
@@ -47,12 +47,12 @@ public class Varias {
     if (x < 0) {
       return voltea(-x);
     }
-    long numeroVolteado = 0;
+    long xVolteado = 0;
     while (x > 0) {
-      numeroVolteado = (numeroVolteado * 10) + (x % 10);
+      xVolteado = (xVolteado * 10) + (x % 10);
       x /= 10;
     }
-    return numeroVolteado;
+    return xVolteado;
   }
 
   public static void prueba(){
@@ -100,4 +100,20 @@ public class Varias {
     }
     return contador;
   }
+
+  public static int digitoN(int x, int y) {
+    int contador = 0;
+    
+    while (x > 0) {
+        if (contador == y) {
+            return x % 10; // Devuelve el dígito en la posición deseada
+        }
+        x /= 10; // Elimina el último dígito
+        contador++;
+    }
+    
+    // Si la posición está fuera del rango, devuelve -1 o maneja según tu lógica
+    return -1;
+}
+
 }
