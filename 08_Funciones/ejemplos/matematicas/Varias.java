@@ -7,6 +7,11 @@ package matematicas;
  */
 public class Varias {
 
+  
+  /** 
+   * @param x
+   * @return boolean
+   */
   public static boolean esPrimo(int x) {
     if (x <= 1) {
       return false;
@@ -90,6 +95,11 @@ public class Varias {
     return (int) Math.pow(x, y);
   }
 
+  
+  /** 
+   * @param x
+   * @return long
+   */
   public static long cuentaDigitos(long x) {
     int contador = 0;
     while (x > 0) {
