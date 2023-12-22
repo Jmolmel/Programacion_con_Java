@@ -5,6 +5,7 @@
  */
 public class NumeroPrimoConFuncionJava {
 
+  
   //Funciones
   public static boolean esPrimo(int x) {
 

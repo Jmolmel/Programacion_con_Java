@@ -2,6 +2,11 @@ package matematicas;
 
 public class FuncionExtra {
 
+    
+    /** 
+     * @param n
+     * @return long
+     */
     public static long encuentraFibonacci(long n) {
         if (n == 0) {
             return 0;
