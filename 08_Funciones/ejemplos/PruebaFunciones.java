@@ -57,6 +57,6 @@ public class PruebaFunciones {
     int n = sc.nextInt();
 
     System.out.println("Serie de Fibonacci hasta el término " + n + ": " + FuncionExtra.encuentraFibonacci(n));
-
+    System.err.println(Double.MAX_VALUE);
   }
 }
