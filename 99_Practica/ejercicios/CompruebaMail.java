@@ -5,6 +5,7 @@ public class CompruebaMail {
         Scanner sc = new Scanner(System.in);
 
         int arroba = 0;
+        boolean punto = false;
 
         System.out.println("Introduce tu email");
         String mail = sc.nextLine();
@@ -14,9 +15,12 @@ public class CompruebaMail {
             if (mail.charAt(i) == '@') {
                 arroba++;
             }
+            if (mail.charAt(i) == '.') {
+                punto = true;
+            }
 
         }
-        if (arroba == 1) {
+        if (arroba == 1 && punto == true) {
             System.out.println("Su mail es correcto.");
         } else {
             System.out.println("Su mail no es correcto.");
