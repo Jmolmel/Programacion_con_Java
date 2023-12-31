@@ -68,7 +68,31 @@ public class ProbandoEjercicios1To14 {
          * 
          * System.out.println(Ejercicio1To14.posicionDeDigito(digitoNumero,
          * digitoAveriguado));
+         * 
+         * //QUITAPORDETRAS
+         * System.out.println("Introduzca un número.");
+         * long quitaPorDetras = sc.nextLong();
+         * System.out.println("Introduzca cuantos dígitos desea quitarle.");
+         * int digito = sc.nextInt();
+         * 
+         * System.out.println(Ejercicio1To14.quitaPorDelante(quitaPorDetras, digito));
+         * 
+         * // PEGAPORDETRAS
+         * System.out.println("Introduzca un número");
+         * long pegaPorDelantes = sc.nextLong();
+         * System.out.println("Introduzca un número");
+         * int pegaNumero = sc.nextInt();
+         * 
+         * System.out.println(Ejercicio1To14.pegaPorDelante(pegaPorDelantes,
+         * pegaNumero));
+         * 
+         * // PEGAPORDELANTE
          */
+        System.out.println("Introduzca un número");
+        long pegaPorDelantes = sc.nextLong();
+        System.out.println("Introduzca un número");
+        int pegaNumero = sc.nextInt();
 
+        System.out.println(Ejercicio1To14.pegaPorDetras(pegaPorDelantes, pegaNumero));
     }
 }

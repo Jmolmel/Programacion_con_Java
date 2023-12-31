@@ -73,7 +73,7 @@ public class Ejercicio1To14 {
         return digito;
     }
 
-    // ********************EJ7.posicionDeDigito********************
+    // ********************EJ8.posicionDeDigito********************
     public static int posicionDeDigito(long x, int y) {
         int digito = digitoN(x, y);
         if (digito == y) {
@@ -82,4 +82,35 @@ public class Ejercicio1To14 {
             return -1;
         }
     }
+
+    // ********************EJ9.quitaPorDetras********************
+    public static long quitaPorDetras(long x, int y) {
+
+        for (int i = 0; i < y; i++) {
+            x /= 10;
+        }
+        return x;
+    }
+
+    // ********************EJ10.quitaPorDelante********************
+    public static long quitaPorDelante(long x, int y) {
+        long copiaNumero = Ejercicio1To14.voltea(x);
+        for (int i = 0; i < y; i++) {
+            copiaNumero /= 10;
+        }
+        return Ejercicio1To14.voltea(copiaNumero);
+    }
+
+    // ********************EJ11.pegaPorDetras********************
+    public static long pegaPorDelante(long x, int y) {
+        return (x * 10) + y;
+    }
+
+    // ********************EJ12.pegaPorDelante********************
+    public static long pegaPorDetras(long x, int y) {
+
+        long copiaNumero = Ejercicio1To14.pegaPorDelante(Ejercicio1To14.voltea(x), y);
+        return Ejercicio1To14.voltea(copiaNumero);
+    }
+
 }
