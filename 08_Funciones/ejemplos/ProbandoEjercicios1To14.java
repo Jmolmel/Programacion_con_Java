@@ -47,14 +47,28 @@ public class ProbandoEjercicios1To14 {
          * long digito = sc.nextLong();
          * 
          * System.out.println(Ejercicio1To14.digitos(digito));
+         * 
+         * 
+         * // DIGITON
+         * System.out.println("Introduzca un número.");
+         * long digitoN = sc.nextLong();
+         * System.out.println("Introduzca la posicion que quiere averiguar.");
+         * int digitoAveriguar = sc.nextInt();
+         * 
+         * System.out.println(Ejercicio1To14.digitoN(digitoN, digitoAveriguar));
+         * 
+         * // POSICIONDEDIGITO
+         * 
+         * System.out.println("Introduzca un número.");
+         * long digitoNumero = sc.nextLong();
+         * System.out.
+         * println("Introduzca la posicion que quiere averiguar, si no se encuentra devolvera -1."
+         * );
+         * int digitoAveriguado = sc.nextInt();
+         * 
+         * System.out.println(Ejercicio1To14.posicionDeDigito(digitoNumero,
+         * digitoAveriguado));
          */
 
-        // DIGITON
-        System.out.println("Introduzca un número.");
-        long digitoN = sc.nextLong();
-        System.out.println("Introduzca la posicion que quiere averiguar.");
-        int digitoAveriguar = sc.nextInt();
-
-        System.out.println(Ejercicio1To14.digitoN(digitoN, digitoAveriguar));
     }
 }

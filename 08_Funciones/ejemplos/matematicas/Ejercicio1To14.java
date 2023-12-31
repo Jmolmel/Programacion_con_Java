@@ -72,4 +72,14 @@ public class Ejercicio1To14 {
         }
         return digito;
     }
+
+    // ********************EJ7.posicionDeDigito********************
+    public static int posicionDeDigito(long x, int y) {
+        int digito = digitoN(x, y);
+        if (digito == y) {
+            return y;
+        } else {
+            return -1;
+        }
+    }
 }
