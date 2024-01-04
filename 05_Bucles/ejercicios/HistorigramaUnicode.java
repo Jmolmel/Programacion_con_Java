@@ -108,33 +108,261 @@ public class HistorigramaUnicode {
         } else {
             notaMayor = nota3;
         }
+        // Variables
+        int numeroColumnas1 = notaMayor - nota1;
+        int numeroColumnas2 = notaMayor - nota2;
+        int numeroColumnas3 = notaMayor - nota3;
+        int numeroColumnas4 = notaMayor - (int) Math.round(notaFinal);
 
         // switch para colores y grafica
         if (grafica.equalsIgnoreCase("SI")) {
-            System.out.println("Elija el color para su gráfica(Rojo, Verde, amarillo)");
+            System.out.println("Elija el color para su gráfica(Azul, Morado, Amarillo)");
             String color = sc.nextLine().toUpperCase(); // Transformo a MAYUSCULAS
+
             switch (color) {
-                case "ROJO":
+                case "AZUL":
+                    // NOTA1
                     // PARTE SUPERIOR
                     System.out.print("\u2554");
-                    for (int i = 0; i < notaMayor; i++) { // +1 para hueco número
+                    for (int i = 0; i < notaMayor; i++) {
                         System.out.print("\u2550\u2550\u2550\u2550\u2566");
                     }
                     System.out.print("\u2550\u2550\u2550\u2550\u2557\n");
                     // PARTE INTERIOR
                     System.out.printf("\u2551 %2d \u2551", nota1);
                     for (int i = 0; i < nota1; i++) {
-                        System.out.print("\033[41m    \033[0m\u2551");
+                        System.out.print("\033[46m    \033[0m\u2551");
                     }
-                    break;
-                case "VERDE":
+                    for (int i = 0; i < numeroColumnas1; i++) {
+                        System.out.print("    \u2551");
+                    }
+                    System.out.println();
+                    // PARTE ABAJO
+                    System.out.print("\u2560");
+                    for (int i = 0; i < notaMayor; i++) {
+                        System.out.print("\u2550\u2550\u2550\u2550\u256C");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u2563\n");
+                    // NOTA2
 
+                    // PARTE INTERIOR
+                    System.out.printf("\u2551 %2d \u2551", nota2);
+                    for (int i = 0; i < nota2; i++) {
+                        System.out.print("\033[46m    \033[0m\u2551");
+                    }
+                    for (int i = 0; i < numeroColumnas2; i++) {
+                        System.out.print("    \u2551");
+                    }
+                    System.out.println();
+                    // PARTE ABAJO
+                    System.out.print("\u2560");
+                    for (int i = 0; i < notaMayor; i++) {
+                        System.out.print("\u2550\u2550\u2550\u2550\u256C");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u2563\n");
+
+                    // NOTA 3
+                    // PARTE INTERIOR
+                    System.out.printf("\u2551 %2d \u2551", nota3);
+                    for (int i = 0; i < nota3; i++) {
+                        System.out.print("\033[46m    \033[0m\u2551");
+                    }
+                    for (int i = 0; i < numeroColumnas3; i++) {
+                        System.out.print("    \u2551");
+                    }
+                    System.out.println();
+                    // PARTE ABAJO
+                    System.out.print("\u2560");
+                    for (int i = 0; i < notaMayor; i++) {
+                        System.out.print("\u2550\u2550\u2550\u2550\u256C");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u2563\n");
+
+                    // NOTAMEDIA
+                    // PARTE INTERIOR
+                    System.out.printf("\u2551 %2d~\u2551", Math.round(notaFinal));
+                    for (int i = 0; i < Math.round(notaFinal); i++) {
+                        if (Math.round(notaFinal) >= 5) {
+                            System.out.print("\033[42m    \033[0m\u2551");
+                        } else {
+                            System.out.print("\033[41m    \033[0m\u2551");
+                        }
+
+                    }
+                    for (int i = 0; i < numeroColumnas4; i++) {
+                        System.out.print("    \u2551");
+                    }
+                    System.out.println();
+                    // PARTE ABAJO
+                    System.out.print("\u255A");
+                    for (int i = 0; i < notaMayor; i++) {
+                        System.out.print("\u2550\u2550\u2550\u2550\u2569");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u255D\n");
+                    break;
+                case "MORADO":
+                    // NOTA1
+                    // PARTE SUPERIOR
+                    System.out.print("\u2554");
+                    for (int i = 0; i < notaMayor; i++) {
+                        System.out.print("\u2550\u2550\u2550\u2550\u2566");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u2557\n");
+                    // PARTE INTERIOR
+                    System.out.printf("\u2551 %2d \u2551", nota1);
+                    for (int i = 0; i < nota1; i++) {
+                        System.out.print("\033[45m    \033[0m\u2551");
+                    }
+                    for (int i = 0; i < numeroColumnas1; i++) {
+                        System.out.print("    \u2551");
+                    }
+                    System.out.println();
+                    // PARTE ABAJO
+                    System.out.print("\u2560");
+                    for (int i = 0; i < notaMayor; i++) {
+                        System.out.print("\u2550\u2550\u2550\u2550\u256C");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u2563\n");
+                    // NOTA2
+
+                    // PARTE INTERIOR
+                    System.out.printf("\u2551 %2d \u2551", nota2);
+                    for (int i = 0; i < nota2; i++) {
+                        System.out.print("\033[45m    \033[0m\u2551");
+                    }
+                    for (int i = 0; i < numeroColumnas2; i++) {
+                        System.out.print("    \u2551");
+                    }
+                    System.out.println();
+                    // PARTE ABAJO
+                    System.out.print("\u2560");
+                    for (int i = 0; i < notaMayor; i++) {
+                        System.out.print("\u2550\u2550\u2550\u2550\u256C");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u2563\n");
+
+                    // NOTA 3
+                    // PARTE INTERIOR
+                    System.out.printf("\u2551 %2d \u2551", nota3);
+                    for (int i = 0; i < nota3; i++) {
+                        System.out.print("\033[45m    \033[0m\u2551");
+                    }
+                    for (int i = 0; i < numeroColumnas3; i++) {
+                        System.out.print("    \u2551");
+                    }
+                    System.out.println();
+                    // PARTE ABAJO
+                    System.out.print("\u2560");
+                    for (int i = 0; i < notaMayor; i++) {
+                        System.out.print("\u2550\u2550\u2550\u2550\u256C");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u2563\n");
+
+                    // NOTAMEDIA
+                    // PARTE INTERIOR
+                    System.out.printf("\u2551 %2d~\u2551", Math.round(notaFinal));
+                    for (int i = 0; i < Math.round(notaFinal); i++) {
+                        if (Math.round(notaFinal) >= 5) {
+                            System.out.print("\033[42m    \033[0m\u2551");
+                        } else {
+                            System.out.print("\033[41m    \033[0m\u2551");
+                        }
+
+                    }
+                    for (int i = 0; i < numeroColumnas4; i++) {
+                        System.out.print("    \u2551");
+                    }
+                    System.out.println();
+                    // PARTE ABAJO
+                    System.out.print("\u255A");
+                    for (int i = 0; i < notaMayor; i++) {
+                        System.out.print("\u2550\u2550\u2550\u2550\u2569");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u255D\n");
                     break;
                 case "AMARILLO":
+                    // NOTA1
+                    // PARTE SUPERIOR
+                    System.out.print("\u2554");
+                    for (int i = 0; i < notaMayor; i++) {
+                        System.out.print("\u2550\u2550\u2550\u2550\u2566");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u2557\n");
+                    // PARTE INTERIOR
+                    System.out.printf("\u2551 %2d \u2551", nota1);
+                    for (int i = 0; i < nota1; i++) {
+                        System.out.print("\033[43m    \033[0m\u2551");
+                    }
+                    for (int i = 0; i < numeroColumnas1; i++) {
+                        System.out.print("    \u2551");
+                    }
+                    System.out.println();
+                    // PARTE ABAJO
+                    System.out.print("\u2560");
+                    for (int i = 0; i < notaMayor; i++) {
+                        System.out.print("\u2550\u2550\u2550\u2550\u256C");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u2563\n");
+                    // NOTA2
 
+                    // PARTE INTERIOR
+                    System.out.printf("\u2551 %2d \u2551", nota2);
+                    for (int i = 0; i < nota2; i++) {
+                        System.out.print("\033[43m    \033[0m\u2551");
+                    }
+                    for (int i = 0; i < numeroColumnas2; i++) {
+                        System.out.print("    \u2551");
+                    }
+                    System.out.println();
+                    // PARTE ABAJO
+                    System.out.print("\u2560");
+                    for (int i = 0; i < notaMayor; i++) {
+                        System.out.print("\u2550\u2550\u2550\u2550\u256C");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u2563\n");
+
+                    // NOTA 3
+                    // PARTE INTERIOR
+                    System.out.printf("\u2551 %2d \u2551", nota3);
+                    for (int i = 0; i < nota3; i++) {
+                        System.out.print("\033[43m    \033[0m\u2551");
+                    }
+                    for (int i = 0; i < numeroColumnas3; i++) {
+                        System.out.print("    \u2551");
+                    }
+                    System.out.println();
+                    // PARTE ABAJO
+                    System.out.print("\u2560");
+                    for (int i = 0; i < notaMayor; i++) {
+                        System.out.print("\u2550\u2550\u2550\u2550\u256C");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u2563\n");
+
+                    // NOTAMEDIA
+                    // PARTE INTERIOR
+                    System.out.printf("\u2551 %2d~\u2551", Math.round(notaFinal));
+                    for (int i = 0; i < Math.round(notaFinal); i++) {
+                        if (Math.round(notaFinal) >= 5) {
+                            System.out.print("\033[42m    \033[0m\u2551");
+                        } else {
+                            System.out.print("\033[41m    \033[0m\u2551");
+                        }
+
+                    }
+                    for (int i = 0; i < numeroColumnas4; i++) {
+                        System.out.print("    \u2551");
+                    }
+                    System.out.println();
+                    // PARTE ABAJO
+                    System.out.print("\u255A");
+                    for (int i = 0; i < notaMayor; i++) { //
+                        System.out.print("\u2550\u2550\u2550\u2550\u2569");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u255D\n");
                     break;
 
                 default:
+                    System.out.println("NO EXISTE SU COLOR");
                     break;
             }
         } else {
