@@ -5,6 +5,9 @@ public class HistorigramaUnicode {
         Scanner sc = new Scanner(System.in);
         boolean salidaBucle = false; // Salida de buble
         double notaFinal = 0; // la declaro para usarla varias veces en el programa.
+        int nota1 = 0;
+        int nota2 = 0;
+        int nota3 = 0;
 
         do {
             // Nombre
@@ -24,9 +27,9 @@ public class HistorigramaUnicode {
             // Notas
             System.out.println(
                     "Introduzca las notas del primer, segundo y tercer trimestre en ese orden.");
-            int nota1 = sc.nextInt();
-            int nota2 = sc.nextInt();
-            int nota3 = sc.nextInt();
+            nota1 = sc.nextInt();
+            nota2 = sc.nextInt();
+            nota3 = sc.nextInt();
 
             // Calculo Notas
             notaFinal = (nota1 + nota2 + nota3) / 3;
@@ -53,7 +56,7 @@ public class HistorigramaUnicode {
             System.out.printf(" %2d \u2551 %2d \u2551 %2d \u2551", nota1, nota2, nota3);
             System.out.printf(" %2.2f", notaFinal);
             if (notaFinal == 10) { // Parche para arreglar la salida formateada, si la media es 10 sale los unicode
-                                   // cuadrados.
+                // cuadrados.
                 System.out.println("\u2551");
             } else {
                 System.out.println(" \u2551");
@@ -77,8 +80,8 @@ public class HistorigramaUnicode {
             System.out.println("\u255D");
 
             System.out.println("¿Quiere probar con otra nota diferente?(Si/No)"); // ***NOTA*** Al llegar a este punto
-                                                                                  // con un nextLine no recoge la
-                                                                                  // informacion. Y con un Next...
+            // con un nextLine no recoge la
+            // informacion. Y con un Next...
             // funciona, pero se salta directamente el primer String del DoWhile, pasando
             // directamente a apellido 1.
 
@@ -96,14 +99,32 @@ public class HistorigramaUnicode {
         System.out.println("¿Desea ver su nota gráficamente?(SI/NO)");
         String grafica = sc.nextLine();
 
+        // Guardamos nota mayor
+        int notaMayor = 0;
+        if (nota1 > nota2 && nota1 > nota3) {
+            notaMayor = nota1;
+        } else if (nota2 > nota1 && nota2 > nota3) {
+            notaMayor = nota2;
+        } else {
+            notaMayor = nota3;
+        }
+
+        // switch para colores y grafica
         if (grafica.equalsIgnoreCase("SI")) {
             System.out.println("Elija el color para su gráfica(Rojo, Verde, amarillo)");
             String color = sc.nextLine().toUpperCase(); // Transformo a MAYUSCULAS
             switch (color) {
                 case "ROJO":
+                    // PARTE SUPERIOR
                     System.out.print("\u2554");
-                    for (int i = 0; i < Math.round(notaFinal); i++) {
-                        System.out.println("");
+                    for (int i = 0; i < notaMayor; i++) { // +1 para hueco número
+                        System.out.print("\u2550\u2550\u2550\u2550\u2566");
+                    }
+                    System.out.print("\u2550\u2550\u2550\u2550\u2557\n");
+                    // PARTE INTERIOR
+                    System.out.printf("\u2551 %2d \u2551", nota1);
+                    for (int i = 0; i < nota1; i++) {
+                        System.out.print("\033[41m    \033[0m\u2551");
                     }
                     break;
                 case "VERDE":
