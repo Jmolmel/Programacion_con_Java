@@ -81,5 +81,6 @@ public class ProblemaPPT {
         } else {
             System.out.println("ENHORABUENA JUGADOR 2");
         }
+        sc.close();
     }
 }
