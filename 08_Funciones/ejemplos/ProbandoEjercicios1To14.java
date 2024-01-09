@@ -87,12 +87,32 @@ public class ProbandoEjercicios1To14 {
          * pegaNumero));
          * 
          * // PEGAPORDELANTE
+         * 
+         * System.out.println("Introduzca un número");
+         * long pegaPorDelantes = sc.nextLong();
+         * System.out.println("Introduzca un número");
+         * int pegaNumero = sc.nextInt();
+         * 
+         * System.out.println(Ejercicio1To14.pegaPorDetras(pegaPorDelantes,
+         * pegaNumero));
+         * /*
+         * 
+         * 
+         * System.out.println("Introduzca su numero:");
+         * long trozoDeNumero = sc.nextLong();
+         * System.out.println("Elimine los digitos que desee por delante: ");
+         * int digitoDelante = sc.nextInt();
+         * System.out.println("Elimine los digitos que desee por detras: ");
+         * int digitoDetras = sc.nextInt();
+         * 
+         * System.out.println(Ejercicio1To14.trozoDeNumero(trozoDeNumero, digitoDelante,
+         * digitoDetras));
          */
-        System.out.println("Introduzca un número");
-        long pegaPorDelantes = sc.nextLong();
-        System.out.println("Introduzca un número");
-        int pegaNumero = sc.nextInt();
+        System.out.println("Introduce el primer número para pegarlo");
+        long numero1 = sc.nextLong();
+        System.out.println("Introduce el segundo número para pegarlo:");
+        long numero2 = sc.nextLong();
 
-        System.out.println(Ejercicio1To14.pegaPorDetras(pegaPorDelantes, pegaNumero));
+        System.out.println(Ejercicio1To14.juntaNumeros(numero1, numero2));
     }
 }

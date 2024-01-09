@@ -113,4 +113,22 @@ public class Ejercicio1To14 {
         return Ejercicio1To14.voltea(copiaNumero);
     }
 
+    // ********************EJ13.trozoDeNumero********************
+
+    public static long trozoDeNumero(long x, int y, int z) {
+        long numeroCompleto = x;
+        numeroCompleto = quitaPorDelante(numeroCompleto, y);
+        numeroCompleto = quitaPorDetras(numeroCompleto, z);
+        return numeroCompleto;
+    }
+
+    // ********************EJ14.juntaNumeros********************
+    public static long juntaNumeros(long x, long y) {
+        long digitos = y;
+        while (digitos > 0) {
+            x *= 10;
+            digitos /= 10;
+        }
+        return x + y;
+    }
 }
