@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import matematicas.Ejercicio1To14;
+import matematicas.FuncionExtra;
 
 public class ProbandoEjercicios1To14 {
     public static void main(String[] args) {
@@ -107,12 +108,18 @@ public class ProbandoEjercicios1To14 {
          * 
          * System.out.println(Ejercicio1To14.trozoDeNumero(trozoDeNumero, digitoDelante,
          * digitoDetras));
+         * 
+         * System.out.println("Introduce el primer número para pegarlo");
+         * long numero1 = sc.nextLong();
+         * System.out.println("Introduce el segundo número para pegarlo:");
+         * long numero2 = sc.nextLong();
+         * 
+         * System.out.println(Ejercicio1To14.juntaNumeros(numero1, numero2));
          */
-        System.out.println("Introduce el primer número para pegarlo");
-        long numero1 = sc.nextLong();
-        System.out.println("Introduce el segundo número para pegarlo:");
-        long numero2 = sc.nextLong();
 
-        System.out.println(Ejercicio1To14.juntaNumeros(numero1, numero2));
+        System.out.println("Prueba numero fibonacci: ");
+        long numero = sc.nextLong();
+
+        System.out.println(FuncionExtra.encuentraFibonacci(numero));
     }
 }

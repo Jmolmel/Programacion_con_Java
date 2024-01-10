@@ -53,10 +53,16 @@ public class PruebaFunciones {
 
     // DIGITON
 
-    System.out.println("Introduzca un número: ");
-    int n = sc.nextInt();
+    // System.out.println("Introduzca un número: ");
+    // int n = sc.nextInt();
 
-    System.out.println("Serie de Fibonacci hasta el término " + n + ": " + FuncionExtra.encuentraFibonacci(n));
-    System.err.println(Double.MAX_VALUE);
+    // System.out.println("Serie de Fibonacci hasta el término " + n + ": " +
+    // FuncionExtra.encuentraFibonacci(n));
+    // System.err.println(Double.MAX_VALUE);
+    System.out.println("Prueba numero fibonacci: ");
+    long numero = sc.nextLong();
+
+    System.out.println(FuncionExtra.encuentraFibonacci(numero));
+    sc.close();
   }
 }
