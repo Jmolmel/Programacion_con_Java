@@ -26,6 +26,5 @@ public class T07Ejercicio05 {
       }
       System.out.println();
     }
-
   }
 }
