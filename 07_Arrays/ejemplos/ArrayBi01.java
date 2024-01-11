@@ -1,5 +1,6 @@
 public class ArrayBi01 {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws InterruptedException {
+  
     int[][] n = new int[3][2];  //Array de 3 filas x 2 columnas
 
     n[0][0] = 20; //1ª fila 1ª columna
@@ -12,6 +13,7 @@ public class ArrayBi01 {
     for (int filas = 0; filas < n.length; filas++) {
       for (int columna = 0; columna < n[filas].length; columna++) {
         System.out.printf("%10d ", n[filas][columna]);
+        Thread.sleep(1000); //Retardo de un segundo
       }
       System.out.println();
     }
