@@ -1,4 +1,4 @@
-public class T07Ejercicio01b {
+public class T07Ejercicio01bidim {
     public static void main(String[] args) {
         int[][] num = new int[3][6];
 
