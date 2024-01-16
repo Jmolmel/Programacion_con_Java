@@ -59,7 +59,7 @@ public class ProblemaPPT {
                 System.out.print("-");
             }
             System.out.println();
-            System.out.println("|" + jugador1 + "| " + marcadorJ1 + " |" + " " + marcadorJ2 + " |"
+            System.out.println("|" + jugador1 + " | " + marcadorJ1 + " |" + " " + marcadorJ2 + " |"
                     + jugador2 + " |");
 
             System.out.print(" ");
