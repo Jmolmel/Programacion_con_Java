@@ -18,7 +18,7 @@ public class T07Ejercicio06_bidim {
                     }
                     esRepetido = false;
                 } while (!esRepetido(numero, i, j));
-
+                
                 if (numero[i][j] > maximo) {
                     maximo = numero[i][j];
                 } else if (numero[i][j] < minimo) {
