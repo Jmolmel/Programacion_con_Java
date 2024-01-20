@@ -1,7 +1,6 @@
 public class Gato {
 
-
-  //ATRIBUTOS
+  // ATRIBUTOS
   String nombre;
   String color;
   String raza;
@@ -9,9 +8,9 @@ public class Gato {
   int edad;
   double peso;
 
-  //CONSTRUCTORES
-  Gato(String nombre){
-    this.nombre = nombre; //Puedes definirlo desde aqui
+  // CONSTRUCTORES
+  Gato(String nombre) {
+    this.nombre = nombre; // Puedes definirlo desde aqui
     this.color = "Azul";
     this.raza = "Romano";
   }
@@ -25,19 +24,17 @@ public class Gato {
     this.peso = peso;
   }
 
+  // METODOS
 
-
-  
-
-  //METODOS
-
-  void maulla(){
+  void maulla() {
     System.out.println("MIAUUUUUUUUUUUUUU!");
   }
-  void ronronea(){
+
+  void ronronea() {
     System.out.println("RRRRRRRRRRRRRRRRRRRRRR");
   }
-  void come(String comida){
+
+  void come(String comida) {
     if (comida.equalsIgnoreCase("Pescado")) {
       System.out.println("ÑAM ÑAM!");
     } else {
@@ -45,14 +42,12 @@ public class Gato {
     }
   }
 
-  void peleaCon(Gato contrincante){
+  void peleaCon(Gato contrincante) {
     if (this.sexo.equals(contrincante.sexo) && (this.sexo.equals("Macho"))) {
       System.out.println("Pelea");
     } else {
       System.out.println("No me gusta pelear");
     }
   }
-
-
 
 }

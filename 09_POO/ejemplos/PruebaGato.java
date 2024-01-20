@@ -14,7 +14,7 @@ public class PruebaGato {
     // Gato missy = new Gato();
     // missy.sexo = "Hembra";
 
-    // garfield.come("Pescador");      //Se añade el string de la clase Gato
+    // garfield.come("Pescador"); //Se añade el string de la clase Gato
     // garfield.maulla();
     // garfield.ronronea();
     // garfield.peleaCon(colega);
@@ -23,12 +23,12 @@ public class PruebaGato {
     System.out.print("¿Cuántos gatos quieres crear?: ");
     int num = Integer.parseInt(System.console().readLine());
 
-    String[] nombres = {"Garfield", "Botas", "Willy", "Pancho", "Misifú"};
-    String[] color = {"Marrón", "Negro", "Pardo"};
+    String[] nombres = { "Garfield", "Botas", "Willy", "Pancho", "Misifú" };
+    String[] color = { "Marrón", "Negro", "Pardo" };
     Gato[] gaticos = new Gato[num];
 
     for (int i = 0; i < num; i++) {
-      
+
       int nombreAleatorio = (int) (Math.random() * 5);
       int colorAleatorio = (int) (Math.random() * 3);
       System.out.print("¿Qúe raza quiere elegir?: ");
