@@ -10,23 +10,21 @@
  */
 public class T07Ejercicio07 {
     public static void main(String[] args) {
-
-        int[] numeros = new int[100];
-
+        int[] numeros = new int[20];
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = (int) (Math.random() * 21);
-            System.out.print(numeros[i] + "   ");
+            System.out.print(numeros[i] + " ");
         }
-
-        System.out.println("Introduce el primer valor:");
-        int valor1 = Integer.parseInt(System.console().readLine());
-        System.out.println("Introduce el segundo valor:");
-        int valor2 = Integer.parseInt(System.console().readLine());
+        System.out.println();
+        System.out.println("Introduzca en primer valor:");
+        int num1 = Integer.parseInt(System.console().readLine());
+        System.out.println("Introduzca en segundo valor:");
+        int num2 = Integer.parseInt(System.console().readLine());
 
         for (int i = 0; i < numeros.length; i++) {
-            if (numeros[i] == valor1) {
-                numeros[i] = valor2;
-                System.out.print("\"" + numeros[i] + "\"  ");
+            if (numeros[i] == num1) {
+                numeros[i] = num2;
+                System.out.print("\"" + numeros[i] + "\"");
             } else {
                 System.out.print(numeros[i] + "  ");
             }

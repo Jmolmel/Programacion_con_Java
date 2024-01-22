@@ -29,5 +29,4 @@ public class T07Ejercicio10 {
             System.out.print(impar[i] + " ");
         }
     }
-
 }
