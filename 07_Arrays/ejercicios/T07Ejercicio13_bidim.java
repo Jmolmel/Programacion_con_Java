@@ -7,7 +7,7 @@ public class T07Ejercicio13_bidim {
         int maximo = Integer.MIN_VALUE;
         for (int i = 0; i < estatura.length; i++) {
             for (int j = 0; j < estatura[i].length; j++) {
-                estatura[i][j] = (int) (Math.random() * 70 + 140);
+                estatura[i][j] = (int) (Math.random() * 71 + 140);
             }
         }
         System.out.printf("%78s \n", "MED  MIN  MAX");
