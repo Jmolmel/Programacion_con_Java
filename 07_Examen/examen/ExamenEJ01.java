@@ -16,12 +16,12 @@ public class ExamenEJ01 {
     System.out.println("-D-I-V-I-N-A-R-E-M- ELIGE SU PROPIO RANGO");
 
     for (int i = 0; i < numeros.length; i++) {
-      numeros[i] = (int) ((Math.random() * maximo + 1) + minimo);  // Maximo + 1 para incluir el número
+      numeros[i] = (int) ((Math.random() * ((maximo-minimo) + 1)) + minimo);  // Maximo + 1 para incluir el número
     }
 
     do {
-      rangoMinimoMaquina = (int) (Math.random() * maximo + minimo);
-      rangoMaximoMaquina = (int) (Math.random() * maximo + minimo);
+      rangoMinimoMaquina = (int) (Math.random() * ((maximo-minimo) + 1)) + minimo;
+      rangoMaximoMaquina = (int) (Math.random() * ((maximo-minimo) + 1)) + minimo;
     } while (rangoMaximoMaquina > maximo && minimo < rangoMaximoMaquina);
     
     System.out.println(" -D-I-V-I-N-A-R-E-M- está pensando un número entre " + rangoMinimoMaquina + " y " + rangoMaximoMaquina);  // MAQUINA ELIGE RANGO DENTRO DE MI INTERVALO
