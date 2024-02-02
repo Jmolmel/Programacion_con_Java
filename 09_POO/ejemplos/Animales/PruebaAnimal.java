@@ -1,6 +1,5 @@
 package Animales;
 
-import Animales.Animal.Sexo;
 
 public class PruebaAnimal {
   public static void main(String[] args) {
@@ -24,5 +23,7 @@ public class PruebaAnimal {
 
     Pinguino paco = new Pinguino(Sexo.HERMAFROTIDA);
     System.out.println(paco.toString());
+
+
   }
 }

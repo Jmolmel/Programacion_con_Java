@@ -1,6 +1,6 @@
 package Animales;
 
-public class Gato extends Animal {
+public class Gato extends Mamifero {
 
   //Atributos
   private String raza;
