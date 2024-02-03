@@ -55,7 +55,7 @@ public class Gato extends Mamifero {
     }
   }
 
-
+  @Override
   public String toString(){
     return super.toString() + "Raza: " + this.raza + "\n*************************\n";
   }

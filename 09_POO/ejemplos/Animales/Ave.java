@@ -3,12 +3,16 @@ package Animales;
 public class Ave extends Animal {
 
   //Atributos
-  public Ave(Sexo s){
+  private String raza;
+
+  public Ave(Sexo s, String r){
     super(s);
+    this.raza = r;
   }
 
-  public Ave(){
+  public Ave(String r){
     super();
+    this.raza = r;
   }
 
   public void aseate(){
@@ -19,4 +23,17 @@ public class Ave extends Animal {
     System.out.println("Estoy volando");
   }
 
+  public void canta(String r){
+    this.raza = r;
+    if (r.equals("canario")) {
+      System.out.println("Canto estupendamente");
+    } else {
+      System.out.println("No sé cantar");
+    }
+  }
+
+  @Override
+  public String toString() {
+    return super.toString() + " mi raza de ave es: " + this.raza;
+  }
 }

@@ -3,27 +3,17 @@ package Animales;
 
 public class PruebaAnimal {
   public static void main(String[] args) {
-    Gato garfield = new Gato(Sexo.MACHO, "romano");
-    Gato tom = new Gato(Sexo.MACHO);
-    Gato lisa = new Gato(Sexo.HEMBRA);
-    Gato silvestre = new Gato();
 
-    System.out.println(garfield);
-    System.out.println(tom);
-    System.out.println(lisa);
-    System.out.println(silvestre);
+    Canario pepe = new Canario(Sexo.HEMBRA, "Canario", "Amarillo");
+    
+    System.out.println(pepe.toString());
 
-    Ave miLoro = new Ave();
-    miLoro.aseate();
-    miLoro.vuela();
+    pepe.canta("pinguino");
 
-    Pinguino pingu = new Pinguino(Sexo.HEMBRA);
-    pingu.aseate();
-    pingu.vuela();
+    Pinguino ola = new Pinguino(Sexo.HEMBRA, "corbata", "2");
 
-    Pinguino paco = new Pinguino(Sexo.HERMAFROTIDA);
-    System.out.println(paco.toString());
-
+    System.out.println(ola.toString());
 
   }
+
 }
