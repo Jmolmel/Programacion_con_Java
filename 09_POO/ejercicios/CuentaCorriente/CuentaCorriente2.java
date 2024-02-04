@@ -1,3 +1,4 @@
+package CuentaCorriente;
 public class CuentaCorriente2 {
 
   //ATRIBUTOS

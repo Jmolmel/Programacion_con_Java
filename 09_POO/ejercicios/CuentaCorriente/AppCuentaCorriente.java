@@ -1,3 +1,4 @@
+package CuentaCorriente;
 public class AppCuentaCorriente {
   public static void main(String[] args) {
     CuentaCorriente cuenta1 = new CuentaCorriente();
