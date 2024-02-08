@@ -43,17 +43,15 @@ public class AppVehiculos {
         break;
       case 6:
       System.out.println("Ha recorrido con su bici un total de: " + cochecito.getKilometrosRecorridos() + " kilometros.");
+        break;
       default:
       case 7:
-      System.out.println(cochecito.getKilometrosTotales()); //Falla
+      System.out.println(Vehiculo.getKilometrosTotales() + " kilometros totales.");
         break;
       case 8: 
         salida = true;
         break;
     }
   } while (!salida);
-
-    
-
   }
 }

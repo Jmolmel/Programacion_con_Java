@@ -18,7 +18,7 @@ public abstract class Vehiculo {
   public int getKilometrosRecorridos() {
     return kilometrosRecorridos;
   }
-  public int getKilometrosTotales() {
+  public static int getKilometrosTotales() {
     return kilometrosTotales;
   }
 
@@ -26,13 +26,5 @@ public abstract class Vehiculo {
     this.kilometrosRecorridos += kilometros;
     Vehiculo.kilometrosTotales += kilometros;
   }
-  
-  public void sumaKilometros(int kilometros){
-    kilometrosTotales += kilometrosRecorridos;
-  }
-  public void andaVehiculo(int kilometros){
-    sumaKilometros(kilometros);
-  }
-
   
 }
