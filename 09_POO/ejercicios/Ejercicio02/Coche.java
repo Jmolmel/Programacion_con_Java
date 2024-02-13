@@ -4,6 +4,7 @@ public class Coche extends Vehiculo{
 
   public Coche(){
     super();
+    
   }
 
   public void quemarRueda(){

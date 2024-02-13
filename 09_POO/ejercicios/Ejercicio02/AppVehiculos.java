@@ -42,7 +42,7 @@ public class AppVehiculos {
         
         break;
       case 6:
-      System.out.println("Ha recorrido con su bici un total de: " + cochecito.getKilometrosRecorridos() + " kilometros.");
+      System.out.println("Ha recorrido con su coche un total de: " + cochecito.getKilometrosRecorridos() + " kilometros.");
         break;
       default:
       case 7:

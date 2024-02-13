@@ -6,22 +6,30 @@
 public class Coche {
 
   ///////////////////Atributos
-  String matricula;
-  String marca;
-  String modelo;
-  String color;
-  int puertas;
-  int potencia;
-
-  public static void main(String[] args) {
-    Coche miCoche = new Coche(); //Coche 1
-    Coche tuCoche = new Coche(); //Coche 2
+  private String matricula;
+  private String marca;
+  private String modelo;
+  private String color;
+  private int kilometraje; //Kilometraje un coche en particular
+  private static int kilometrajeTotal = 0;
 
 
-    miCoche.matricula = "1234ABC";
-    System.out.println("Matricula del coche 1: " + miCoche.matricula);
-    System.out.println("Potencia del coche 1: " + miCoche.potencia);
-    System.out.println("Matricula del coche 2: " + tuCoche.matricula);
-    System.out.println("Potencia del coche 2: " + tuCoche.potencia);
+
+  public Coche(String matricula, String marca, String modelo, String color) {
+    this.matricula = matricula;
+    this.marca = marca;
+    this.modelo = modelo;
+    this.color = color;
+    this.kilometraje = 0;
   }
+
+  public int getKilometraje() {
+    return kilometraje;
+  }
+
+  public void recorre(int cantidad){
+    this.kilometraje += cantidad;
+    kilometrajeTotal += cantidad;
+  }
+  
 }
