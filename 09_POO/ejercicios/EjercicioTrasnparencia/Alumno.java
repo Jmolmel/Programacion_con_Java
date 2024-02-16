@@ -12,7 +12,6 @@ public class Alumno {
 
     // Constructores
     public Alumno() {
-
     }
 
     public Alumno(String matricula, String nombre, int edad, int curso, String modulo, String numeroAlumno) {
@@ -96,5 +95,5 @@ public class Alumno {
         cadena += "\n------------------------------------------";
         return cadena;
     }
-
+    
 }
