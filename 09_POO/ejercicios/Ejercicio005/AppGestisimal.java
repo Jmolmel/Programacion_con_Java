@@ -41,14 +41,34 @@ public class AppGestisimal {
           app.modificacion(almacen);
           break;
         case 5:
-          
+        System.out.println("Cuánta mercancia desea añadir: ");
+        int mercancia = Integer.parseInt(System.console().readLine());
+        System.out.println("Introduzca el código de articulo para modificarlo: ");
+        int codigo = Integer.parseInt(System.console().readLine());
+          int k = -1;
+          do {
+            k++;
+          } while (almacen[k].getCodigo() != codigo);
+          almacen[k].entradaMercancia(mercancia);
+          break;
+        case 6:
+        System.out.println("Cuánta mercancia desea retirar: ");
+        int mercanciaSalida = Integer.parseInt(System.console().readLine());
+        System.out.println("Introduzca el código de articulo para modificarlo: ");
+        int codigo1 = Integer.parseInt(System.console().readLine());
+          int f = -1;
+          do {
+            f++;
+          } while (almacen[f].getCodigo() != codigo1);
+          almacen[f].salidaMercancia(mercanciaSalida);;
+          break;
         default:
           break;
       }
     } while (eleccion != 7);
 
   }
-
+  //Corregirr para que no imprima un codigo vacio.
   public void listado(Almacen[] almacen) {
     for (int i = 0; i < almacen.length; i++) {
         if (almacen[i] != null) { //Si el valor no es nulo es decir esta el array ocupado lo pintará
