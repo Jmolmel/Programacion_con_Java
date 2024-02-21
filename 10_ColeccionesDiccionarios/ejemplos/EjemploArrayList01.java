@@ -15,6 +15,8 @@ public class EjemploArrayList01 {
     System.out.println("Nº de elementos: " + lista.size()); //"size" ver el tamaño de la lista
 
     lista.add("Naranja");
+    lista.add("Amarillo");
+    
 
     System.out.println("Nº de elementos: " + lista.size()); //"size" ver el tamaño de la lista
 

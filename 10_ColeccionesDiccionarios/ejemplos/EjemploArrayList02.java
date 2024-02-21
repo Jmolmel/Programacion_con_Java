@@ -17,9 +17,12 @@ public class EjemploArrayList02 {
     
     System.out.println("Contenido de las listas: ");
 
-    for (int i = 0; i < lista.size(); i++) {  //Size para mostrar el tamaño del array
-      System.out.println(lista.get(i));       //Get para mostrar
-    }
+    // for (int i = 0; i < lista.size(); i++) {  //Size para mostrar el tamaño del array
+    //   System.out.println(lista.get(i));       //Get para mostrar
+    // }
 
+    for (String color : lista) {
+      System.out.println(color);
+    }
   }
 }
