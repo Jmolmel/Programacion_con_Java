@@ -1,20 +1,44 @@
 import java.util.ArrayList;
 
+/**
+ * Eliminar y encontrar coincidencias de elementos de un ArrayList de String: 
+ * métodos remove y contains
+ * 
+ * @author Sergio Sánchez
+ */
 public class EjemploArrayList03 {
   public static void main(String[] args) {
-        ArrayList<String> lista = new ArrayList<String>();
 
-    System.out.println("Nº de elementos: " + lista.size()); //"size" ver el tamaño de la lista
+    ArrayList<String> a = new ArrayList<String>();
 
-    //Se añade 3 elementos
-    lista.add("Rojo");
-    lista.add("Verde");
-    lista.add("Azul");
-    lista.add("Blanco");
-    lista.add("Amarillo");
-    
-    System.out.println("Contenido de las listas: ");
-    for (String color : lista) {
+    a.add("rojo");
+    a.add("verde");
+    a.add("azul");
+    a.add("Blanco");
+    a.add("amarillo");
+
+    System.out.println("Contenido de la lista: ");
+
+    for(String color: a) {
+      System.out.println(color);
+    }
+
+    if (a.contains("blanco")) {
+      System.out.println("El blanco está en la lista de colores");
+    }
+
+    a.remove("blanco");  
+
+    System.out.println("Contenido de la lista después de quitar la " + "primera ocurrencia del color blanco: ");
+
+    for(String color: a) {
+      System.out.println(color);
+    }
+
+    a.remove(2);
+    System.out.println("Contenido de la lista después de quitar el " + "elemento de la posición 2: ");
+
+    for(String color: a) {
       System.out.println(color);
     }
   }

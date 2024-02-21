@@ -10,7 +10,6 @@ public class AppGestisimal {
     final int N = 5;
     int eleccion;
 
-
     Almacen[] almacen = new Almacen[N];
     AppGestisimal app = new AppGestisimal();
 
@@ -35,10 +34,10 @@ public class AppGestisimal {
           app.alta(almacen); //Funcion Alta
           break;
         case 3:
-          app.baja(almacen);
+          baja(almacen); //Funcion baja STATIC
           break;
         case 4:
-          app.modificacion(almacen);
+          app.modificacion(almacen); //Funcion modificación
           break;
         case 5:
         System.out.println("Cuánta mercancia desea añadir: ");
@@ -97,7 +96,7 @@ public void alta(Almacen[] almacen){
   almacen[i] = new Almacen(codigo, descripcion, precioCompra, precioVenta, stock);
 }
 
-public void baja(Almacen[] almacen){
+public static void baja(Almacen[] almacen){
   System.out.println("Introduzca el código que quiere dar de baja: ");
   int baja = Integer.parseInt(System.console().readLine());
   int i = -1;
