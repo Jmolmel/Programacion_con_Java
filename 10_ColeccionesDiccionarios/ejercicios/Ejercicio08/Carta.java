@@ -1,6 +1,6 @@
 package Ejercicio08;
 
-public class Carta {
+public class Carta implements Comparable<Carta>{
 
   //////// Atributos
   private static String[] palos = { "Oros", "Copas", "Espadas", "Bastos" }; // Oros, Copas, Espadas y Bastos.
@@ -24,7 +24,7 @@ public class Carta {
 
     @Override
     public String toString() {
-      return valor + "de " + palo;
+      return valor + " de " + palo;
     }
 
     @Override
@@ -47,6 +47,18 @@ public class Carta {
       } else if (!valor.equals(other.valor))
         return false;
       return true;
+    }
+
+
+    @Override
+    public int compareTo(Carta otraCarta) {
+        // Primero se compara por palo
+        int comparacionPalo = this.palo.compareTo(otraCarta.palo);
+        if (comparacionPalo != 0) {
+            return comparacionPalo;
+        }
+        // Si los palos son iguales, se compara por valor
+        return this.valor.compareTo(otraCarta.valor);
     }
     
     

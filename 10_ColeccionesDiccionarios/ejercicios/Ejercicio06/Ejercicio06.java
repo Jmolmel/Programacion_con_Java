@@ -1,4 +1,4 @@
-package Ejercicio08;
+package Ejercicio06;
 import java.util.HashMap;
 
 /**
@@ -7,7 +7,7 @@ import java.util.HashMap;
  * 
  * @author José Molina Meléndez
  */
-public class Ejercicio1 {
+public class Ejercicio06 {
   public static void main(String[] args) {
     HashMap<String, String> bbdd = new HashMap<>(); //Usuario y contraseña.
     String usuario;
