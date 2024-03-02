@@ -11,7 +11,7 @@ public class AppGestisimal {
     int eleccion;
 
     Almacen[] almacen = new Almacen[N];
-    AppGestisimal app = new AppGestisimal();
+
 
     almacen[0] = new Almacen(100, "Cerveza victoria", 5.50, 8.50, 100);
 
@@ -28,16 +28,16 @@ public class AppGestisimal {
 
       switch (eleccion) {
         case 1:
-          app.listado(almacen); //Llamar función de AppGestisimal
+          listado(almacen); //Llamar función de AppGestisimal
           break;
         case 2:
-          app.alta(almacen); //Funcion Alta
+          alta(almacen); //Funcion Alta
           break;
         case 3:
           baja(almacen); //Funcion baja STATIC
           break;
         case 4:
-          app.modificacion(almacen); //Funcion modificación
+          modificacion(almacen); //Funcion modificación
           break;
         case 5:
         System.out.println("Cuánta mercancia desea añadir: ");
@@ -68,15 +68,14 @@ public class AppGestisimal {
 
   }
   //Corregirr para que no imprima un codigo vacio.
-  public void listado(Almacen[] almacen) {
+  public static void listado(Almacen[] almacen) {
     for (int i = 0; i < almacen.length; i++) {
         if (almacen[i] != null) { //Si el valor no es nulo es decir esta el array ocupado lo pintará
             System.out.println(almacen[i].toString());
         } 
     }
 }
-
-public void alta(Almacen[] almacen){
+public static void alta(Almacen[] almacen){
   int codigo = 0;
   int i = -1;
 
@@ -106,7 +105,7 @@ public static void baja(Almacen[] almacen){
   almacen[i].darBaja(baja); //Metodo de almacen darBaja restablece a null / 0 todo los valores.ui
 }
 
-public void modificacion(Almacen[] almacen){
+public static void modificacion(Almacen[] almacen){
 
   System.out.println("Introduzca el código de articulo para modificarlo: ");
   int codigo = Integer.parseInt(System.console().readLine());
