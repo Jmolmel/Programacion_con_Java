@@ -5,6 +5,7 @@
  * @author José Molina Meléndez
  */
 package Ejercicio04;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -20,6 +21,7 @@ public class Ejercicio04 {
         }
 
         Collections.sort(palabras);
+
         System.out.println("Palabras ordenadas:");
         for (String palabra : palabras) {
             System.out.println(palabra);

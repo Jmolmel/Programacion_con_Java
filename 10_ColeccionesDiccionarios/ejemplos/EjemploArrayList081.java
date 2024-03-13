@@ -25,8 +25,8 @@ public class EjemploArrayList081 {
 
     System.out.println("\nDatos de los gatos ordenados por nombre:");
 
-    for (Gato gatoAux: g) {
-      System.out.println(gatoAux+"\n");
+    for (Gato gatoAux : g) {
+      System.out.println(gatoAux + "\n");
     }
   }
 }

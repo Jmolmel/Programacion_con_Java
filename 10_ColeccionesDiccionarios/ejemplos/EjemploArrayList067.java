@@ -10,7 +10,7 @@ public class EjemploArrayList067 {
     a.add(3);
     System.out.println("Contenido de la lista: ");
     System.out.println(a);
-    a.removeIf(palabra -> palabra < 10); //Puedes poner cualquier variable
+    a.removeIf(numero -> numero < 10); // Puedes poner cualquier variable
     System.out.println("Contenido de la lista después de borrar los menores de 10: ");
     System.out.println(a);
   }
